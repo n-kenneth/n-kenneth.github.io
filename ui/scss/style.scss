@@ -1,0 +1,82 @@
+@import 'import';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+input {
+	width: 100%;
+	font-family: 'Roboto';
+	outline: 0;
+	border: 0;
+	@include boxSizing;
+}
+
+.wrapper {
+	max-width: 1060px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.col {
+	width: 320px;
+	float: left;
+	@include boxSizing;
+}
+
+.form-groups li {
+	margin-bottom: 15px;
+}
+
+.form {
+	position: relative;
+	overflow: hidden;
+	input {
+		padding: 12px 55px 12px 12px;
+	}
+	.form-icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 50px;
+		height: 100%;
+		color: $textOne;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&.form-btn {
+			background: #4d8693;
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				color: $textTwo;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1060px) {
+	.wrapper {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.col {
+		width: 100%;
+	}
+}

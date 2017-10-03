@@ -1,0 +1,61 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+// Variables
+$gray: #a7a7ab;
+$darkGray: #6d6e76;
+$lightGray: #e2e2e2;
+$blueGreen: #5a9aa8;
+$darkBlueGreen: #4d8693;
+
+// Font Color
+$textOne: #6d6e76;
+$textTwo: #fff;
+
+@mixin transition($val) {
+	-webkit-transition: $val;
+	-o-transition: $val;
+	transition: $val;
+}
+
+@mixin borderRadius($val) {
+	-webkit-border-radius: $val;
+	-moz-border-radius: $val;
+	-ms-border-radius: $val;
+	-o-border-radius: $val;
+	border-radius: $val;
+}
+
+@mixin transform($val) {
+	-webkit-transform: $val;
+	-ms-transform: $val;
+	-o-transform: $val;
+	transform: $val;
+}
+
+@mixin boxSizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: $lightGray;
+	color: $textOne;
+	font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+	font-size: 16px;
+}
+
+input::-webkit-input-placeholder {
+  color: $darkGray;
+}
+input::-moz-placeholder {
+  color: $darkGray;
+}
+input:-ms-input-placeholder {
+  color: $darkGray;
+}
+input:-moz-placeholder {
+  color: $darkGray;
+}

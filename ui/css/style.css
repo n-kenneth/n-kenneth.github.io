@@ -1,0 +1,89 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+body {
+  background: #e2e2e2;
+  color: #6d6e76;
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+  font-size: 16px; }
+
+input::-webkit-input-placeholder {
+  color: #6d6e76; }
+
+input::-moz-placeholder {
+  color: #6d6e76; }
+
+input:-ms-input-placeholder {
+  color: #6d6e76; }
+
+input:-moz-placeholder {
+  color: #6d6e76; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  text-align: center; }
+
+ul {
+  list-style-type: none; }
+
+input {
+  width: 100%;
+  font-family: 'Roboto';
+  outline: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrapper {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto; }
+
+.col {
+  width: 320px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.form-groups li {
+  margin-bottom: 15px; }
+
+.form {
+  position: relative;
+  overflow: hidden; }
+  .form input {
+    padding: 12px 55px 12px 12px; }
+  .form .form-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    height: 100%;
+    color: #6d6e76;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .form .form-icon.form-btn {
+      background: #4d8693; }
+      .form .form-icon.form-btn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: #fff; }
+
+@media screen and (max-width: 1060px) {
+  .wrapper {
+    padding: 0 10px; } }
+
+@media screen and (max-width: 640px) {
+  .col {
+    width: 100%; } }
