@@ -40,30 +40,25 @@
 			</ul>
 
 			<div class="form">
+				<div class="select">
 				<div class="select-header">
-					SELECT STATE
+					<span>SELECT STATE</span>
+					<div class="form-icon"><i class="ion-arrow-down-b"></i></div>
 				</div>
-				<div class="form-icon"><i class="ion-arrow-down-b"></i></div>
-				<div class="dropDown-radio">
-					<div class="radio-item">
-						<div class="radio-title" for="alabama">Alabama</div>
-						<div class="radio-icon">
+					<div class="dropDown-radio">
+						<div class="radio-item">
 							<input type="radio" name="state" id="alabama" value="Alabama">
-							<label for="alabama"></label>
+							<label for="alabama" class="radio-title">
+								Alabama
+							</label>
 						</div>
-					</div>
-					<div class="radio-item">
-						<div class="radio-title">Alaska</div>
-						<div class="radio-icon">
+						<div class="radio-item">
 							<input type="radio" name="state" id="alaska" value="Alaska">
-							<label for="alaska"></label>
+							<label for="alaska" class="radio-title">Alaska</label>
 						</div>
-					</div>
-					<div class="radio-item">
-						<div class="radio-title">Arizona</div>
-						<div class="radio-icon">
-							<input type="radio" name="state" id="arizona" value="Arizona">
-							<label for="arizona"></label>
+						<div class="radio-item">
+								<input type="radio" name="state" id="arizona" value="Arizona">
+								<label class="radio-title" for="arizona">Arizona</label>
 						</div>
 					</div>
 				</div>
@@ -71,12 +66,84 @@
 		</div>
 
 		<div class="col">
-			
+			<div class="contact">
+				<ul>
+					<li class="contact-avatar"><img src="images/avatar_female.jpg" alt=""></li>
+					<li class="contact-info"><span class="name">Angelo</span><span class="job">Web designer</span></li>
+					<li class="contact-icon"><a href="#"><i class="ion-ios-telephone"></i></a></li>
+				</ul>
+			</div>
+			<ul class="action-btn">
+				<li>
+					<a href="#" class="a-btn counted">
+						<i class="ion-ios-star"></i>
+						<span class="count">3.6</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="a-btn">
+						<i class="ion-android-calendar"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="a-btn counted">
+						<i class="ion-ios-chatbubble"></i>
+						<span class="count">27</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="a-btn">
+						<i class="ion-ios-heart"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="a-btn">
+						<i class="ion-thumbsup"></i>
+					</a>
+				</li>
+			</ul>
+
+			<nav class="main-nav">
+				<ul>
+					<li>
+						<a href="#" class="burger"><i class="ion-navicon-round"></i></a>
+					</li>
+					<li class="logo">WELCOME MENU</li>
+					<li><a href="#" class="option"><i class="ion-gear-b"></i></a></li>
+				</ul>
+			</nav>
 		</div>
 
 		<div class="col">
-			
+			<p><a href="#" target="_blank" class="btn">OPEN IN NEW WINDOW</a></p>
+			<p><a href="#" class="btn btn-icon"><i class="icon ion-arrow-return-left"></i>BACK TO HOME</a></p>
+			<p>
+				<a href="#" class="btn btn-half">LOGIN</a>
+				<a href="#" class="btn btn-icon btn-half"><i class="icon ion-power"></i>LOGOUT</a>
+			</p>
+			<p>
+				<a href="#" class="btn-pill"><i class="ion-minus"></i></a>
+				<a href="#" class="btn-pill"><i class="ion-plus"></i></a>
+				<a href="#" class="btn-pill"><i class="ion-chevron-left"></i></a>
+				<a href="#" class="btn-pill"><i class="ion-chevron-right"></i></a>
+			</p>
+			<ul class="ui-radio">
+				<li>
+					<label for="radio01"><i class="ion-android-radio-button-off"></i>Radio is on</label>
+					<input type="radio" id="radio01" name="btn-radio">
+				</li>
+				<li>
+					<label for="radio02"><i class="ion-android-radio-button-off"></i>Radio is off</label>
+					<input type="radio" id="radio02" name="btn-radio">
+				</li>
+				<li>
+					<label for="radio03"><i class="ion-android-radio-button-off"></i>Disabled</label>
+					<input type="radio" id="radio03" name="btn-radio">
+				</li>
+			</ul>
 		</div>
 	</div>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

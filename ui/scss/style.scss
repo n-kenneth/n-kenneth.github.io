@@ -13,12 +13,24 @@ ul {
 	list-style-type: none;
 }
 
-input {
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+input{
 	width: 100%;
 	font-family: 'Roboto';
 	outline: 0;
 	border: 0;
 	@include boxSizing;
+}
+input[type="radio"] {
+	width: initial;
 }
 
 .wrapper {
@@ -26,17 +38,18 @@ input {
 	width: 100%;
 	margin: 0 auto;
 }
-
 .col {
 	width: 320px;
 	float: left;
+	margin: 0 50px 20px 0;
 	@include boxSizing;
+	&:last-child {
+		margin-right: 0;
+	}
 }
-
 .form-groups li {
 	margin-bottom: 15px;
 }
-
 .form {
 	position: relative;
 	overflow: hidden;
@@ -56,7 +69,7 @@ input {
 		align-items: center;
 		justify-content: center;
 		&.form-btn {
-			background: #4d8693;
+			background: $darkBlueGreen;
 			a {
 				display: flex;
 				align-items: center;
@@ -69,14 +82,231 @@ input {
 	}
 }
 
+.radio-item  input[type="radio"] {
+	display: none;
+}
+.select-header {
+	position: relative;
+	background: #fff;
+	padding: 12px 0 12px 12px;
+	cursor: pointer;
+	.form-icon {
+		background: $darkBlueGreen;
+		color: #fff;
+	}
+}
+.dropDown-radio {
+	display: none;
+}
+.radio-item {
+	display: block;
+	border-bottom: 1px solid #e0e0e0;
+	&:first-child {
+			border-top: 1px solid #e0e0e0;
+	}
+	&:hover {
+		color: #4d8693;
+	}
+	&:hover .radio-title:after {
+		background: #4d8693;
+	}
+	.radio-title {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		padding: 12px 0 12px 12px;
+		cursor: pointer;
+		&:after {
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			width: 20px;
+			height: 20px;
+			background: $lightGray;
+			content: '';
+			@include transform(translateY(-50%));
+			@include borderRadius(50%);
+			@include transition(background .3s);
+		}
+	}
+}
+
+.radio-item  input[type="radio"]:checked ~ label {
+	color: $blueGreen;
+}
+.radio-item  input[type="radio"]:checked ~ label:after {
+	background: $blueGreen;
+}
+
+.contact {
+	max-width: 320px;
+	background: #fff;
+	margin-bottom: 20px;
+	ul {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		li {
+			&.contact-info {
+				width: 220px;
+				box-sizing: border-box;
+				padding-left: 10px;
+			}
+			&.contact-avatar {
+				line-height: 0;
+			}
+			&.contact-icon  {
+				display: block;
+				width: 50px;
+				text-align: center;
+				font-size: 26px;
+				& a {
+				color: $textOne;
+				}
+			}
+			.name {
+				display: block;
+				color: $darkBlueGreen;
+				font-size: 16px;
+				font-weight: 700;
+			}
+			.job {
+				color: $textOne;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.action-btn {
+	overflow: hidden;
+	margin-bottom: 20px;
+	li {
+		float: left;
+		margin-right: 5.46875%;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.a-btn {
+	display: table-cell;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	color: $textOne;
+	text-align: center;
+	text-decoration: none;
+	&.counted {
+		span.count {
+			display: block;
+			font-size: 11px;
+		}
+	}
+	&:hover {
+		background: $blueGreen;
+		color: #fff;
+	}
+	i {
+		font-size: 20px;
+	}
+}
+
+.main-nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $blueGreen;
+	color: #fff;
+	.burger,
+	.option {
+		display: block;
+		padding: 11px 16px;
+		background: $darkBlueGreen;
+		color: #fff;
+		font-size: 26px;
+	}
+}
+
+.btn {
+	display: block;
+	padding: 16px 0;
+	background: $blueGreen;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	@include boxSizing;
+	&.btn-icon {
+		position: relative;
+		padding: 16px 0;
+		@include boxSizing;
+	}
+	&.btn-icon > .icon {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 11px 16px;
+		vertical-align: middle;
+		background: #4d8693;
+		font-size: 24px;
+	}
+}
+
+.btn-half {
+	display: inline-block;
+	width: 48.4375%;
+	&.btn-icon {
+		padding-left: 50px;
+	}
+	&:first-child {
+		margin-right: 1.725%;
+	}
+}
+
+.btn-pill {
+	display: inline-block;
+	padding: 13px 20px;
+	background: #fff;
+	color: $textOne;
+	font-size: 21px;
+	text-align: center;
+	&:hover {
+		background: $darkBlueGreen;
+		color: #fff;
+	}
+}
+
+ul.ui-radio {
+	input[type="radio"] {
+		display: none;
+	}
+	label {
+		position: relative;
+		color: $textOne;
+		font-size: 16px;
+	}
+}
+
 @media screen and (max-width: 1060px) {
 	.wrapper {
 		padding: 0 10px;
+		@include boxSizing;
 	}
 }
 
 @media screen and (max-width: 640px) {
 	.col {
 		width: 100%;
+	}
+	.action-btn {
+		li {
+			margin-right: 4.133333%;
+		}
 	}
 }
