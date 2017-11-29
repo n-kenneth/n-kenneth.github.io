@@ -18,4 +18,11 @@
 		return false;
 	});
 
+	// $('header').swipe({
+	// 	swipeDown: function(){
+	// 		$(this).find('.navi ul').addClass('open');
+	// 	},
+	// 	threshold: 0
+	// });
+
 })();

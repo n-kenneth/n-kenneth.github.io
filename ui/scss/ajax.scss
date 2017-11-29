@@ -1,0 +1,46 @@
+@import 'import';
+
+body {
+	background: #fff;
+	color: #333;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.card {
+	max-width: 320px;
+	width: 100%;
+	border: 1px solid #d9d9d9;
+	.card-header {
+		position: relative;
+		.date {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: inline-block;
+			color: #fff;
+			text-align: center;
+			background: tomato;
+			padding: 10px;
+			border-radius: 50%;
+		}
+		.tag {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			display: inline-block;
+			background: tomato;
+			color: #fff;
+			padding: 5px 15px;
+		}
+	}
+}

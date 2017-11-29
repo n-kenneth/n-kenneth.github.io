@@ -1,0 +1,58 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+body {
+  background: #e2e2e2;
+  color: #6d6e76;
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+  font-size: 16px; }
+
+input::-webkit-input-placeholder {
+  color: #6d6e76; }
+
+input::-moz-placeholder {
+  color: #6d6e76; }
+
+input:-ms-input-placeholder {
+  color: #6d6e76; }
+
+input:-moz-placeholder {
+  color: #6d6e76; }
+
+body {
+  background: #fff;
+  color: #333; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto; }
+
+.card {
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid #d9d9d9; }
+  .card .card-header {
+    position: relative; }
+    .card .card-header .date {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      background: tomato;
+      padding: 10px;
+      border-radius: 50%; }
+    .card .card-header .tag {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      background: tomato;
+      color: #fff;
+      padding: 5px 15px; }

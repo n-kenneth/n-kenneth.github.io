@@ -268,13 +268,41 @@ input[type="radio"] {
     background: #4d8693;
     color: #fff; }
 
-ul.ui-radio input[type="radio"] {
+.ui-radio,
+.ui-checkbox {
+  float: left; }
+
+.ui-checkbox input[type="checkbox"],
+.ui-radio input[type="radio"] {
   display: none; }
 
-ul.ui-radio label {
-  position: relative;
-  color: #6d6e76;
-  font-size: 16px; }
+.ui-checkbox input[type="checkbox"] + label,
+.ui-radio input[type="radio"] + label {
+  cursor: pointer; }
+
+.ui-checkbox input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 22px;
+  height: 21px;
+  vertical-align: middle;
+  background: url(../images/check_sprite.png);
+  cursor: pointer; }
+
+.ui-checkbox input[type="checkbox"]:checked + label span,
+.ui-radio input[type="radio"]:checked + label span {
+  background-position-y: -21px; }
+
+.ui-checkbox input[type="checkbox"]:disabled + label span,
+.ui-radio input[type="radio"]:disabled + label span {
+  background-position-y: 21px; }
+
+.ui-radio input[type="radio"] + label span {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle;
+  background: url(../images/radio_sprite.png);
+  cursor: pointer; }
 
 @media screen and (max-width: 1060px) {
   .wrapper {
