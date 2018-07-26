@@ -7,6 +7,11 @@ a {
 	text-decoration: none;
 	color: #333;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -24,12 +29,6 @@ body {
 	height: calc(100vh - 50px);
 	box-shadow: 0 0 13px 6px rgba(0, 0, 0, 0.3);
 }
-
-.one-half {
-	width: 50%;
-	position: relative;
-}
-
 .logo-block {
 	display: flex;
 	justify-content: center;
@@ -37,7 +36,13 @@ body {
 	height: 100%;
 }
 
+.logo-area {
+	width: 30%;
+}
+
 .description {
+		width: 70%;
+	position: relative;
 	box-sizing: border-box;
 	padding: 25px;
 	color: #fff;
@@ -86,9 +91,13 @@ nav .menu .burger span:nth-child(3) {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	margin-left: 200px;
+}
+.main-block {
+	margin-bottom: 50px;
 }
 .main h1 {
+	text-indent: -5px;
 	font-family: 'ADAM';
 	font-size: 10.1rem;
 	position: relative;
@@ -104,6 +113,8 @@ nav .menu .burger span:nth-child(3) {
 .main .lead {
 	font-family: 'Oswald';
 	font-size: 3rem;
+	margin-bottom: 25px;
+	letter-spacing: 5px;
 }
 
 .social {
