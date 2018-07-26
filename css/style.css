@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'ADAM';
+  src: url(../fonts/ADAMPRO.otf);
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #ccc;
+	padding: 25px;
+}
+
+.wrapper {
+	background-color: #fff;
+	display: flex;
+	height: calc(100vh - 50px);
+	box-shadow: 0 0 13px 6px rgba(0, 0, 0, 0.3);
+}
+
+.one-half {
+	width: 50%;
+	position: relative;
+}
+
+.logo-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.description {
+	box-sizing: border-box;
+	padding: 25px;
+	color: #fff;
+	background: rgb(239,71,58); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(239,71,58,1) 0%, rgba(204,46,62,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(239,71,58,1) 0%,rgba(204,46,62,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(239,71,58,1) 0%,rgba(204,46,62,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef473a', endColorstr='#cc2e3e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+nav {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+nav .menu {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	letter-spacing: 8px;
+}
+nav .menu .burger {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-left: 20px;
+}
+nav .menu .burger span {
+	display: block;
+	background: #fff;
+	height: 1px;
+}
+nav .menu .burger span:not(:last-child) {
+	margin-bottom: 8px;
+}
+nav .menu .burger span:nth-child(1) {
+	width: 15px;
+}
+nav .menu .burger span:nth-child(2) {
+	width: 30px;
+}
+nav .menu .burger span:nth-child(3) {
+	width: 20px;
+}
+
+.main {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main h1 {
+	font-family: 'ADAM';
+	font-size: 10.1rem;
+	position: relative;
+}
+.main h1 span {
+	font-size: 2.4rem;
+	display: block;
+	text-align: right;
+	margin-right: 80px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.main .lead {
+	font-family: 'Oswald';
+	font-size: 3rem;
+}
+
+.social {
+	display: flex;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+.social li:not(:first-child) {
+	margin-left: 20px;
+}
+.social a {
+	font-size: 3rem;
+	color: #fff;
+}
